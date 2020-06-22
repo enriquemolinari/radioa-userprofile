@@ -1,6 +1,6 @@
 package main;
 
-import userprofile.model.DefaultRadioListener;
+import userprofile.model.DefaultRadioListeners;
 import userprofile.model.DefaultUserAuth;
 import userprofile.persistence.JooqRadioListenerRepository;
 import userprofile.persistence.JooqTokens;
@@ -15,8 +15,17 @@ public class Main {
   var tx = new Tx("jdbc:derby://localhost:1527/radiocompetition", "app",
     "app");
   
-//  var a = new DefaultRadioListener(new JooqRadioListenerRepository(tx),
-//    new JooqUsersNames(tx));
+  var a = new DefaultRadioListeners(new JooqRadioListenerRepository(tx),
+    new JooqUsersNames(tx));
+  
+  var l = a.listener(1);
+  l.ifPresent(ll -> {
+   System.out.println(ll.email());
+   System.out.println(ll.lastName());
+   System.out.println(ll.name());
+   
+  });
+  
 //
 //  a.newListener("25929195", "Enrique", "Molinari", "6666-989898",
 //    "emolin@ja.com", "emolinar2di", "pwd123");

@@ -1,6 +1,6 @@
 package userprofile.model;
 
-class DefaultListener implements Listener {
+class DefaultListener implements ListenerUser {
 
 	private String personId;
 	private String name;

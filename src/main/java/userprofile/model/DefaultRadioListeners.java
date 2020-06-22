@@ -1,13 +1,16 @@
 package userprofile.model;
 
-import userprofile.model.api.RadioListener;
+import java.util.Optional;
 
-public class DefaultRadioListener implements RadioListener {
+import userprofile.model.api.RadioListener;
+import userprofile.model.api.RadioListeners;
+
+public class DefaultRadioListeners implements RadioListeners {
 
  private RadioListenerRepository repository;
  private UsersNames usersName;
 
- public DefaultRadioListener(RadioListenerRepository repository,
+ public DefaultRadioListeners(RadioListenerRepository repository,
    UsersNames usersName) {
   this.repository = repository;
   this.usersName = usersName;
@@ -20,5 +23,10 @@ public class DefaultRadioListener implements RadioListener {
     username, usersName, pwd);
 
   repository.addListener(listener);
+ }
+
+ @Override
+ public Optional<RadioListener> listener(int listenerId) {
+  return repository.listener(listenerId).map(l -> l.radioListener());
  }
 }
