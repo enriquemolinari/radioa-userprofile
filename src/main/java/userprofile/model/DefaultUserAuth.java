@@ -1,11 +1,11 @@
 package userprofile.model;
 
 import userprofile.model.api.UserAuth;
-import userprofile.spi.RadioException;
-import userprofile.spi.Token;
-import userprofile.spi.Tokens;
-import userprofile.spi.User;
-import userprofile.spi.Users;
+import userprofile.model.spi.RadioException;
+import userprofile.model.spi.Token;
+import userprofile.model.spi.Tokens;
+import userprofile.model.spi.User;
+import userprofile.model.spi.Users;
 
 public class DefaultUserAuth implements UserAuth {
 

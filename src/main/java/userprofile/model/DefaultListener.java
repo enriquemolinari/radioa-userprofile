@@ -1,7 +1,7 @@
 package userprofile.model;
 
-import userprofile.spi.ListenerUser;
-import userprofile.spi.UsersNames;
+import userprofile.model.spi.ListenerUser;
+import userprofile.model.spi.UsersNames;
 
 class DefaultListener implements ListenerUser {
 

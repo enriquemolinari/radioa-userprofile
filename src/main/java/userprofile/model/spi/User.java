@@ -1,4 +1,4 @@
-package userprofile.spi;
+package userprofile.model.spi;
 
 public interface User {
 

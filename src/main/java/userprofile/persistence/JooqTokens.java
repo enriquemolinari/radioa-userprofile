@@ -7,9 +7,9 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
-import userprofile.spi.Token;
-import userprofile.spi.Tokens;
-import userprofile.spi.User;
+import userprofile.model.spi.Token;
+import userprofile.model.spi.Tokens;
+import userprofile.model.spi.User;
 
 public class JooqTokens implements Tokens {
 

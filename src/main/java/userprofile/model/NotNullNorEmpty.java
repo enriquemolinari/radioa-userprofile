@@ -1,6 +1,6 @@
 package userprofile.model;
 
-import userprofile.spi.RadioException;
+import userprofile.model.spi.RadioException;
 
 class NotNullNorEmpty<T> {
 
