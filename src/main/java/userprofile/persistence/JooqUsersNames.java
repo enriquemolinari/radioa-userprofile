@@ -2,8 +2,8 @@ package userprofile.persistence;
 
 import static userprofile.persistence.jooq.tables.ListenerUser.LISTENER_USER;
 
-import userprofile.model.RadioException;
-import userprofile.model.UsersNames;
+import userprofile.spi.RadioException;
+import userprofile.spi.UsersNames;
 
 public class JooqUsersNames implements UsersNames {
  private Tx tx;

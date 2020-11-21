@@ -1,5 +1,8 @@
 package userprofile.model;
 
+import userprofile.spi.ListenerUser;
+import userprofile.spi.UsersNames;
+
 class DefaultListener implements ListenerUser {
 
 	private String personId;

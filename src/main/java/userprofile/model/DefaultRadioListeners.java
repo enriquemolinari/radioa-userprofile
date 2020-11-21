@@ -4,6 +4,8 @@ import java.util.Optional;
 
 import userprofile.model.api.RadioListener;
 import userprofile.model.api.RadioListeners;
+import userprofile.spi.RadioListenerRepository;
+import userprofile.spi.UsersNames;
 
 public class DefaultRadioListeners implements RadioListeners {
 

@@ -4,8 +4,8 @@ import static userprofile.persistence.jooq.tables.ListenerUser.LISTENER_USER;
 
 import java.util.Optional;
 
-import userprofile.model.User;
-import userprofile.model.Users;
+import userprofile.spi.User;
+import userprofile.spi.Users;
 
 public class JooqUsers implements Users {
 

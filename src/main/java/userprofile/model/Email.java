@@ -1,5 +1,7 @@
 package userprofile.model;
 
+import userprofile.spi.RadioException;
+
 class Email {
 
 	private String email;
